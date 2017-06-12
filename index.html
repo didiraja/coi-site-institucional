@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="assets/plugins/mfp/jquery.mfp.css">
 	<link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
 
-<body>
+<body id="topo">
 
 	<!-- Preloader Animation -->
 	<div class="site-loader"></div>
@@ -48,12 +48,12 @@
 					<div class="col-md-6">
 						<p>
 							<i class="fa fa-phone"></i>
-							Agende uma consulta: 3092.4391 | <b class="text-uppercase">Urgência</b>: 99258.2222
+							Agende uma consulta: <a href="tel://30924391">3092.4391</a> | <span class="top-bar-urgencia text-uppercase">Urgência: <a href="tel://992582222">99258.2222</a></span>
 						</p>
 					</div>
 					<div class="col-md-6">
 						<ul class="top-social">
-							<li><a class="facebook-bar" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="facebook-bar" target="_blank" href="https://www.facebook.com/consultorioodontologicoiraja/"><i class="fa fa-facebook"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -72,20 +72,11 @@
 						<div class="navbar-collapse collapse navbar-right">
 							<nav id="navigation" class="navbar-nav">
 								<ul class="nav">
-									<li>
-										<a href="#">Home</a>
-									</li>
-									<li><a href="#">Serviços</a></li>
-									<li><a href="#">Responsáveis</a></li>
-									<li>
-										<a href="#">Imagens</a>
-									
-									</li>
-									<li>
-										<a href="#">Localização</a>
-										
-									</li>
-									<li><a href="#">Contato</a></li>
+									<li><a href="#topo">Home</a></li>
+									<li><a href="#portfolio">Imagens</a></li>
+									<li><a href="#about">Serviços</a></li>
+									<li><a href="#equipe">Responsáveis</a></li>
+									<li><a href="#contato" class="a-btn"><span class="btn btn-default">Marcar uma Consulta</span></a></li>
 								</ul>
 							</nav>
 						</div>
@@ -255,237 +246,80 @@
 		<div class="site-wrapper site-homepage clearfix">
 
 			<!-- Form Layout -->
-			<section class="padding paddv-60 remove-padding paddb" data-mode="none" data-background="demo/content/parallax-01.jpg">
+			<section id="contato" class="padding paddv-30" data-background="demo/content/parallax-01.jpg">
 
 				<div class="container about-author section-row">
 					<div class="row">
-						<div class="author-content">
-							<h1 class="author-title" data-animation-name="fade">
-								Johny Bravo
-								<span>CEO &amp; Co-Founder of Dentist</span>
-							</h1>
-							<p class="author-desc" data-animation-name="fade">We are proud to have the opportunity to give you the smile of your dreams.</p>
-							<a href="#" class="author-link" data-animation-name="fadeInUp" title="">Buy Now</a>
-							<a href="#" class="author-link" data-animation-name="fadeInUp" title="">See More</a>
+						
+						<div class="col-md-8">
+							<div class="top-form">
+						<div class="form-inner clearfix">
+							<form class="contact-form" method="post" role="form" action="#">
+								<h2 class="heading">Marque sua consulta</h2>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" name="dev[name]" value="" placeholder="Nome">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" name="dev[surname]" value="" placeholder="Sobrenome">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" name="dev[phone]" value="" placeholder="Telefone">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="email" class="form-control" name="dev[email]" value="" placeholder="E-mail">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Deixe sua mensagem" name="dev[message]" rows="6"></textarea>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<button type="submit" class="btn btn-default">Enviar</button>
+										</div>
+									</div>
+								</div>
+							</form>
 						</div>
-						<div class="author-attachment" data-animation-name="fadeInUp">
-							<a href="#" class="author-image" title="">
-								<img src="demo/content/layer-01.png" alt="">
-							</a>
+					</div>
+					
 						</div>
+						
+						<div class="col-md-4" data-animation-name="fadeInUp">
+							<img src="demo/content/layer-01.png" alt="">
+						</div>
+						
 					</div>
 				</div>
 			</section>
 			<!-- /Form Layout -->
-
-			<!-- About -->
-			<section id="about" class="padding paddv-80">
-				<div class="container section-row">
-					<div class="row">
-						<div class="col-md-12">
-							<h2 class="heading">Áreas de Atuação</h2>
-							<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues <br> and what can be done to help you be in optimal dental health.</p>
-						</div>
-					</div>
-
-					<div class="row">
-                        
-                        <!-- primeira coluna -->
-						<div class="col-md-6">
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-3"></i>
-								</a>
-								<div class="content">
-									<h2>Implantodontia</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-4"></i>
-								</a>
-								<div class="content">
-									<h2>Periodontia</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-5"></i>
-								</a>
-								<div class="content">
-									<h2>Ortodontia</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-                            <div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-4"></i>
-								</a>
-								<div class="content">
-									<h2>Dentística</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-5"></i>
-								</a>
-								<div class="content">
-									<h2>Estética</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-						</div>
-                        
-                        <!-- segunda coluna -->
-						<div class="col-md-6">
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-3"></i>
-								</a>
-								<div class="content">
-									<h2>Prótese</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-4"></i>
-								</a>
-								<div class="content">
-									<h2>Cirurgia</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-5"></i>
-								</a>
-								<div class="content">
-									<h2>Endodontia</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-                            <div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-4"></i>
-								</a>
-								<div class="content">
-									<h2>Odontopediatria</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
-								<a href="#" title="">
-									<i class="dev dev-5"></i>
-								</a>
-								<div class="content">
-									<h2>Clareamento</h2>
-									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- /About -->
 			
-			<!-- Team -->
-			<section id="equipe" class="padding paddv-80">
-				<div class="container section-row">
-					<div class="row">
-						<div class="col-md-12">
-							<h2 class="heading">Responsáveis Técnicos</h2>
-							<p>Our practice prides itself on providing the very finest level of service, from a simple filling to complex <br>cosmetic dentistry.</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-md-offset-2">
-							<div class="team-member">
-								<a href="team-single.html" title="">
-									<img src="demo/teams/image-01.jpg" alt="">
-								</a>
-								<div class="toolbar clearfix">
-									<div class="left">
-										<h2>
-											Gilson José
-											<span>CRO 12345</span>
-										</h2>
-									</div>
-									<div class="right">
-										<ul>
-											<li>
-												<a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-envelope"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<p>At the time, had it failed to enter his monomaniac mind, that all the anguish of that then present suffering was but the direct issue of a former.</p>
-							</div>
-						</div>
-						<div class="col-md-4 center-block">
-							<div class="team-member">
-								<a href="team-single.html" title="">
-									<img src="demo/teams/image-02.jpg" alt="">
-								</a>
-								<div class="toolbar clearfix">
-									<div class="left">
-										<h2>
-											Bruno Martins
-											<span>CRO 12345</span>
-										</h2>
-									</div>
-									<div class="right">
-										<ul>
-											<li>
-												<a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-envelope"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<p>At the time, had it failed to enter his monomaniac mind, that all the anguish of that then present suffering was but the direct issue of a former.</p>
-							</div>
-						</div>
-	
-					</div>
-					
-				</div>
-			</section>
-			<!-- /Team -->
-
 			<!-- Portfolio -->
-			<section id="portfolio" class="padding paddv-80 fullwidthport">
+			<section id="portfolio" class="padding paddv-60 fullwidthport">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="heading">Fotos</h2>
 							<p>Our practice prides itself on providing the very finest level of service, from a simple filling to complex <br>cosmetic dentistry.</p>
+							
+								<br />
 						</div>
 					</div>
 
@@ -737,63 +571,206 @@
 			</section>
 			<!-- /Portfolio -->
 
-			<!-- Contact Us -->
-			<section id="contact" class="contact-us clearfix">
-				<div class="left has-bg">
-					<div class="top-form">
-						<div class="form-inner clearfix">
-							<form class="contact-form" method="post" role="form" action="#">
-								<h2>Entre em Contato</h2>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" name="dev[name]" value="" placeholder="Nome">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" name="dev[surname]" value="" placeholder="Sobrenome">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" name="dev[phone]" value="" placeholder="Telefone">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="email" class="form-control" name="dev[email]" value="" placeholder="E-mail">
-										</div>
-									</div>
-								</div>
+			<!-- About -->
+			<section id="about" class="padding paddv-60">
+				<div class="container section-row">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="heading">Áreas de Atuação</h2>
+							<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues <br> and what can be done to help you be in optimal dental health.</p>
+						</div>
+					</div>
 
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea class="form-control" placeholder="Deixe sua mensagem" name="dev[message]" rows="6"></textarea>
-										</div>
-									</div>
+					<div class="row">
+                        
+                        <!-- primeira coluna -->
+						<div class="col-md-6">
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-3"></i>
+								</a>
+								<div class="content">
+									<h2>Implantodontia</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
 								</div>
-
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<button type="submit" class="btn btn-default">Enviar</button>
-										</div>
-									</div>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-4"></i>
+								</a>
+								<div class="content">
+									<h2>Periodontia</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
 								</div>
-							</form>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-5"></i>
+								</a>
+								<div class="content">
+									<h2>Ortodontia</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+                            <div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-4"></i>
+								</a>
+								<div class="content">
+									<h2>Dentística</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-5"></i>
+								</a>
+								<div class="content">
+									<h2>Estética</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+						</div>
+                        
+                        <!-- segunda coluna -->
+						<div class="col-md-6">
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-3"></i>
+								</a>
+								<div class="content">
+									<h2>Prótese</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-4"></i>
+								</a>
+								<div class="content">
+									<h2>Cirurgia</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-5"></i>
+								</a>
+								<div class="content">
+									<h2>Endodontia</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+                            <div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-4"></i>
+								</a>
+								<div class="content">
+									<h2>Odontopediatria</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
+							<div class="icon-box clearfix" data-animation-name="fadeInLeft">
+								<a href="#" title="">
+									<i class="dev dev-5"></i>
+								</a>
+								<div class="content">
+									<h2>Clareamento</h2>
+									<p>We provide comprehensive care to our patients. You will get a thorough understanding of your dental issues and what can be done to help you be in optimal dental health.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="right">
-					<div class="google-maps" data-background="#e9e5dc" data-saturation="-70" data-center="42.886909,20.874809" data-markers="[{&quot;lat&quot;:&quot;42.8784123&quot;,&quot;lng&quot;:&quot;20.85454&quot;,&quot;icon&quot;:&quot;assets/img/gmapicon.png&quot;}]" data-zoom="14" data-scrollWheel="false" data-monochrome="true"></div>
-				</div>
-
 			</section>
-			<!-- /Contact Us -->
+			<!-- /About -->
+			
+			
+			<!-- Team -->
+			<section id="equipe" class="padding paddv-60" style="background-color:#EEEEEE;">
+				<div class="container section-row">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="heading">Responsáveis Técnicos</h2>
+							<p>Our practice prides itself on providing the very finest level of service, from a simple filling to complex <br>cosmetic dentistry.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-2">
+							<div class="team-member">
+								
+									<img src="demo/teams/image-01.jpg" alt="">
+								
+								<div class="toolbar clearfix">
+									<div class="left">
+										<h2>
+											Gilson José
+											<span>CRO 12345</span>
+										</h2>
+									</div>
+									<div class="right">
+										<ul>
+											<li>
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-envelope"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p>At the time, had it failed to enter his monomaniac mind, that all the anguish of that then present suffering was but the direct issue of a former.</p>
+							</div>
+						</div>
+						<div class="col-md-4 center-block">
+							<div class="team-member">
+									<img src="demo/teams/image-02.jpg" alt="">
+								<div class="toolbar clearfix">
+									<div class="left">
+										<h2>
+											Bruno Martins
+											<span>CRO 12345</span>
+										</h2>
+									</div>
+									<div class="right">
+										<ul>
+											<li>
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-envelope"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<p>At the time, had it failed to enter his monomaniac mind, that all the anguish of that then present suffering was but the direct issue of a former.</p>
+							</div>
+						</div>
+	
+					</div>
+					
+				</div>
+			</section>
+			<!-- /Team -->
+
 		</div>
 
 		<!-- Footer -->
@@ -828,17 +805,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<p>Layout feito por <a target="_blank" href="http://www.didiraja.net/">Didiraja Design</a></p>
-						</div>
-						<div class="col-md-4">
-							<ul class="bottom-social">
-								<li><a class="facebook-bar" href="#"><i class="fa fa-facebook"></i></a></li>
-							</ul>
+							<p>Layout feito por <a target="_blank" href="https://www.facebook.com/didirajadesign/">Didiraja Design</a></p>
 						</div>
 					</div>
 				</div>
 
-				<a href="#" class="top-scroll">
+				<a href="#topo" class="top-scroll">
 					<i class="fa fa-angle-up"></i>
 				</a>
 			</div>
@@ -873,6 +845,8 @@
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 	<script type="text/javascript" src="assets/plugins/revolution/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script type="text/javascript" src="assets/plugins/revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	
+	<script src="assets/js/custom.js"></script>
 
 </body>
 </html>
