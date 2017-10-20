@@ -925,7 +925,7 @@ function rateAlert(id, rating){
 						$( this ).magnificPopup({
 							delegate: delegate, 
 							type: type, 
-							gallery: delegate ? { enabled: true } : false
+							gallery: true
 						});
 					});
 				});
