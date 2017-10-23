@@ -1,0 +1,30 @@
+{
+  "name": "coi-institucional",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didiraja/coi-site-institucional.git"
+  },
+  "keywords": [
+    "coi",
+    "site",
+    "institucional"
+  ],
+  "author": "didiraja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didiraja/coi-site-institucional/issues"
+  },
+  "homepage": "https://github.com/didiraja/coi-site-institucional#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-imagemin": "^2.3.0"
+  }
+}
